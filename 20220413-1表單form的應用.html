@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #teaLabel {
+            color: blue;
+        }
+
+        #coffeeLabel {
+            color: chocolate;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- 點飲料系統 (直接複製)-->
+
+    <form action="">
+        <!-- 命名原則 有意義的命名 -->
+        <!-- 不要用 a b c d e f g -->
+        <!-- ID是唯一的 不能重複 一個頁面只能有一個ID 用來綁定CSS/js-->
+        <!-- name是欄位名稱-->
+
+        <label for="lname">花茶:</label>
+        <input type="text" name="tea" id="tea">
+        <label for="fname">咖啡:</label>
+        <input type="text" name="coffee" id="coffee">
+        <input type="submit" name="submit" id="submit">
+        <!-- 連在一起了 想斷行的話可以+br或p-->
+
+        <br><br>
+        <hr><br>
+
+        <!-- +<br>示範 -->
+        <label for="lname">花茶:</label><br>
+        <input type="text" name="tea" id="tea"><br>
+        <label for="fname">咖啡:</label><br>
+        <input type="text" name="coffee" id="coffee"><br>
+        <input type="submit" name="submit" id="submit"><br>
+
+        <br><br>
+        <hr><br>
+
+        <!-- +<p></p>示範 -->
+        <p>
+            <label for="lname">花茶:</label>
+        </p>
+        <p>
+            <input type="text" name="tea" id="tea">
+        </p>
+        <p>
+            <label for="fname">咖啡:</label>
+        </p>
+        <p>
+            <input type="text" name="coffee" id="coffee">
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit">
+        </p>
+
+        <br><br>
+        <hr><br>
+
+        <!-- 用CSS把文字變色 -->
+
+        <p>
+            <label for="" id="teaLabel">花茶:</label>
+            <input type="text" name="tea" id="tea">
+            <!-- 大部分的人這邊的name跟id都會打一樣-->
+        </p>
+        <p>
+            <label for="" id="coffeeLabel">咖啡:</label>
+            <input type="text" name="coffee" id="coffee">
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit">
+        </p>
+
+        <br><br>
+        <hr><br>
+
+        <!-- 點文字可以自動跳輸入框 -->
+
+        <p>
+            <!-- 這個for後面接下方ID後的字串後按文字可以自動跳輸入框 -->
+            <label for="tea123" id="teaLabel">花茶:</label>
+            <input type="text" name="tea" id="tea123">
+        </p>
+        <p>
+            <label for="" id="coffeeLabel">咖啡:</label>
+            <input type="text" name="coffee" id="coffee">
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit">
+        </p>
+
+        <br><br>
+        <hr><br>
+
+        <!-- 同一個頁面有兩個from表單 -->
+
+        <p>
+            <label for="" id="teaLabel">花茶:</label>
+            <input type="text" name="tea" id="tea123">
+        </p>
+        <p>
+            <label for="" id="coffeeLabel">咖啡:</label>
+            <input type="text" name="coffee" id="coffee">
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit">
+        </p>
+
+        <br><br>
+        <hr><br>
+
+    </form>
+
+    <form2 action="">
+        <!-- 第二個form表單要打form2-->
+        <p>
+            <label for="tea321" id="teaLabel">花茶:</label>
+            <input type="text" name="tea" id="tea321">
+            <!-- 如果有兩個form表單的話id不能重複-->
+        </p>
+        <p>
+            <label for="" id="coffeeLabel">咖啡:</label>
+            <input type="text" name="coffee" id="coffee">
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit">
+        </p>
+
+        <br><br>
+        <hr><br>
+    </form2>
+
+</body>
+
+</html>
