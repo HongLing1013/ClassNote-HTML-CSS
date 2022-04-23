@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鋼琴</title>
+    <style>
+        body{
+            font-size: 80%;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 0.15em;
+            background-color: #efefef;
+        }
+        .page{
+            max-width: 940px;
+            min-width: 720px;
+            /* viewport height vh 可顯示高度 */
+            height: 90vh;
+            margin: 10px auto ;
+            padding: 20px;
+            border: 4px double #000;
+            background-color: #fff;
+        }
+        .logo{
+            width: 150px;
+            margin: 10px auto;
+        }
+        ul{
+            width: 570px;
+            padding: 15px;
+            margin: 0px auto;
+            text-align: center;
+            border-top:2px solid black ;
+            border-bottom: 1px solid black;
+        }
+        li{
+            display: inline;
+            margin: 0px 5px;
+        }
+        /* a tag 黑色 不要底線 */
+        a{
+           color: #000;
+           text-decoration: none;
+           text-transform: uppercase;
+           padding: 5px 10px; 
+        }
+        p{
+            width: 600px;
+            text-align:  justify;
+            font-weight: normal;
+            margin: 20px auto;
+        }
+        .myKeys{
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="logo">
+            <img src="./image/logo.gif" alt="logo">
+        </div>
+
+        <ul id="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">for sale</a></li>
+            <li><a href="#">repairs</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+
+        <p>
+            <img class="myKeys" src="./image/keys.jpg" alt="keys">
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus provident veniam cumque corporis quo,
+            aliquid velit ratione error fugiat, nemo, consectetur ut. Laborum error nulla odio in officia officiis
+            temporibus accusantium culpa adipisci necessitatibus quaerat tempora nam numquam mollitia iure ea,
+            dignissimos corrupti ipsam possimus cupiditate cum cumque ipsum enim.
+        </p>
+    </div>
+</body>
+
+</html>
