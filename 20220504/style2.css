@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* flex container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex items */
+.col {
+    border: 1px solid black;
+    /* width: 33.333%; */
+    /* width: calc(100% / 3); */
+    flex-basis: calc(100% / 3);
+    /* margin-right: 10px; */
+}
+
+/* css media query (手機板的CSS)*/
+/* desktops */
+@media (max-width: 992px) {
+
+    h1 {
+        color: red;
+    }
+}
+
+/* tablets */
+@media (max-width: 768px) {
+
+    h1 {
+        color: green;
+    }
+}
+
+/* phones */
+@media (max-width: 576px) {
+
+    h1 {
+        color: blue;
+    }
+
+    /* 縮小後會變色 */
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 100vh; */
+    }
+
+    .col {
+        /* flex-basis: 100vh; */
+        flex-basis: calc(100%);
+        /*margin-bottom: 10px; */
+        /* width: 100%; */
+    }
+}
