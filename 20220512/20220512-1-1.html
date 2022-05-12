@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 版面清空 */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* 如果一開始沒有content height抓不到高度 */
+        .container{
+            margin: 0 auto;
+            width: 100%;
+            background-color: lightgray;
+        }
+        .col{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .box1{
+            background-color: lightblue;
+            width: 100%;
+        }
+        .box2{
+            background-color: lightpink;
+            width: 50%;
+            float: left;
+        }
+        .box3{
+            background-color: lightyellow;
+            width: 50%;
+            float: right;
+        }
+        .box4{
+            background-color: lightgreen;
+            width: 100%;
+            float: left;
+        }
+        .container::after{
+            content:"";
+            clear:both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- div本身是沒有高度的 -->
+    <!-- 如字串高度>高度的話 做overflow可以把超出的文字做隱藏 或用scroll做卷軸 -->
+    <div class="container">
+        <div class="col box1">box1 header</div>
+        <div class="col box2">box2 aside</div>
+        <div class="col box3">box3 content</div>
+        <div class="col box4">box4 footer</div>
+    </div>
+</body>
+</html>
