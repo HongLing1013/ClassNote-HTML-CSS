@@ -1,0 +1,1 @@
+alert('alert OK 外部的JS');
