@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript練習</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+        //<!-- 練習四  -->
+        // 1. 輸入存錢數量 1000
+        // 2. 買東西的錢多少 500
+        // 3. 找零多少...
+        // 如果不夠 無法扣款
+        // 最後顯示 存款剩下多少
+        
+        
+        // 1. 輸入存錢數量 1000
+            // save
+        let save = parseInt(prompt('input save',"0"));
+
+        console.log("本次存入 = " + save);
+
+        // 2. 買東西的錢多少 500
+            // buyM
+        let buy = parseInt(prompt('imput buy',"0"));
+        
+        // 3. 存款餘額...
+        if (save>buy){
+            result = save - buy ;
+            save = result
+            console.log("購買商品金額 = " + buy);
+        }else{
+            // 如果不夠 無法扣款
+            console.log("花太多了");
+        }
+
+        // 最後顯示 存款剩下多少
+        // result
+        console.log("存款餘額", save);
+
+
+    </script>
+
+</body>
+</html>
