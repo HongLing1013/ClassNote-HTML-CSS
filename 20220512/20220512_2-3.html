@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第二堂課 課堂排版練習-老師版</title>
+    <title>第二堂課 課堂排版練習-另一種排版方式</title>
     <style>
         * {
             box-sizing: border-box;
@@ -17,17 +17,14 @@
         }
 
         body {
-            width: 960px;
+            width: 90%;
             margin: 0 auto;
-            /* background-color: black; */
         }
 
         .content {
             height: 100%;
-            /* overflow: autos; */
         }
 
-        .nav,
         .feature,
         .footer {
             background-color: beige;
@@ -35,22 +32,42 @@
             margin: 10px;
             height: 30vh;
         }
+        .nav{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
         
         .col1,
         .col2,
         .col3 {
             background-color: #efefef;
-            width: 300px;
+            width: 30%;
             float: left;
             margin: 10px;
             height: 30vh;
         }
-
-        li {
-            display: inline;
-            padding: 10px;
+        .col2{
+            margin-left: 20px;
+        }
+        .col3{
+            float: right;
         }
 
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+        li>a{
+            text-decoration: none;
+        }
         .content::after{
             clear: both;
             content:"";
