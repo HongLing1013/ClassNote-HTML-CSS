@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript練習-function</title>
+    <title>JavaScript練習-function+mystring</title>
 </head>
 
 <body>
     <script>
+        //領錢
         function getMoneyFun() {
             console.log('getMoneyFun');
             // 輸入領錢金額
@@ -19,6 +20,7 @@
             // 可以領 領多少 存款剩多少
             if (save >= withdraw) {
                 console.log("領錢成功!");
+                mystring = mystring + "領錢金額 =>" + withdraw + "\n";
                 save = save - withdraw;
                 // 不可以領 餘額不足
             } else {
@@ -27,6 +29,7 @@
             console.log("最終存款 =>" + save);
         }
 
+        // 轉帳
         function transferMoneyFun() {
             console.log('transferMoneyFun');
             // 轉帳的帳號
@@ -38,6 +41,8 @@
             // 判斷是否足夠
             if (save >= transferMoney) {
                 console.log("轉帳成功!");
+                
+        mystring = mystring + "轉帳金額 =>" + transferMoney + "\n";
                 save = save - transferMoney;
                 // 不可以轉 餘額不足
             } else {
@@ -46,6 +51,7 @@
             console.log("最終存款 =>" + save);
         }
 
+        // 存錢
         function saveMoneyFun() {
             console.log('saveMoneyFun');
             // 輸入領錢金額
@@ -53,6 +59,7 @@
             console.log("領錢金額 => " + saveMoney);
             if (saveMoney >= 0) {
                 console.log("存錢成功!");
+                mystring = mystring + "存錢金額 =>" + saveMoney + "\n";
                 save = save + saveMoney;
                 // 不可以領 餘額不足
             } else {
@@ -84,7 +91,8 @@
         // 2. 後續的動作 - 1.領錢 2.轉帳
         let action = parseInt(prompt('後續動作 1.領錢 2.轉帳 3.存錢 ?', "0"));
         console.log("動作 => " + action);
-
+        let mystring= "動作 => " + action + "\n";
+        
         switch (action) {
             // 領錢時
             case 1:
@@ -102,7 +110,12 @@
             default:
                 break;
         }
-        alert("最終存款 =>" + save);
+
+        // 跳脫字元\n
+        mystring = mystring + "最終存款 =>" + save + "\n";
+
+        alert(mystring);
+        // alert("最終存款 =>" + save);
     </script>
 </body>
 
