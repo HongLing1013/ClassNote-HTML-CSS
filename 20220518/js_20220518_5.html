@@ -10,25 +10,57 @@
 
 <body>
     <script>
-
         function getMoneyFun() {
             console.log('getMoneyFun');
-                            // 輸入領錢金額
-                            let withdraw = parseInt(prompt('領多少錢 ?', "0"));
-                console.log("領錢金額 => " + withdraw);
-                // 判斷是否足夠領取
-                // 可以領 領多少 存款剩多少
-                if (save >= withdraw) {
-                    console.log("領錢成功!");
-                    save = save - withdraw;
-                    // 不可以領 餘額不足
-                } else {
-                    console.log("餘額不足!");
-                }
-                console.log("最終存款 =>" + save);
-            
+            // 輸入領錢金額
+            let withdraw = parseInt(prompt('領多少錢 ?', "0"));
+            console.log("領錢金額 => " + withdraw);
+            // 判斷是否足夠領取
+            // 可以領 領多少 存款剩多少
+            if (save >= withdraw) {
+                console.log("領錢成功!");
+                save = save - withdraw;
+                // 不可以領 餘額不足
+            } else {
+                console.log("餘額不足!");
+            }
+            console.log("最終存款 =>" + save);
         }
-        //<!-- 練習八  -->
+
+        function transferMoneyFun() {
+            console.log('transferMoneyFun');
+            // 轉帳的帳號
+            let transferID = parseInt(prompt('轉入帳號 ?', "0"));
+            console.log("轉入帳號 => " + transferID);
+            // 輸入轉錢金額
+            let transferMoney = parseInt(prompt('轉多少錢 ?', "0"));
+            console.log("轉帳金額 => " + transferMoney);
+            // 判斷是否足夠
+            if (save >= transferMoney) {
+                console.log("轉帳成功!");
+                save = save - transferMoney;
+                // 不可以轉 餘額不足
+            } else {
+                console.log("餘額不足!");
+            }
+            console.log("最終存款 =>" + save);
+        }
+
+        function saveMoneyFun() {
+            console.log('saveMoneyFun');
+            // 輸入領錢金額
+            let saveMoney = parseInt(prompt('存多少錢 ?', "0"));
+            console.log("領錢金額 => " + saveMoney);
+            if (saveMoney >= 0) {
+                console.log("存錢成功!");
+                save = save + saveMoney;
+                // 不可以領 餘額不足
+            } else {
+                console.log("金額錯誤");
+            }
+            console.log("最終存款 =>" + save);
+        }
+        //<!-- 練習八 用function  -->
         // 1. 存錢多少
         // 2. 後續的動作 - 1.領錢 2.轉帳
 
@@ -59,45 +91,16 @@
                 console.log("領錢中");
                 getMoneyFun()
                 break;
-                // 轉帳時
             case 2:
-                // 輸入領錢金額
                 console.log("轉帳中");
-                // 轉帳的帳號
-                let transferID = parseInt(prompt('轉入帳號 ?', "0"));
-                console.log("轉入帳號 => " + transferID);
-                // 可以領 領多少 存款剩多少
-                let transferMoney = parseInt(prompt('轉多少錢 ?', "0"));
-                console.log("轉帳金額 => " + transferMoney);
-                // 判斷是否足夠
-                if (save >= transferMoney) {
-                    console.log("轉帳成功!");
-                    save = save - transferMoney;
-                    // 不可以轉 餘額不足
-                } else {
-                    console.log("餘額不足!");
-                }
-                console.log("最終存款 =>" + save);
                 break;
-                case 3:
-                // 輸入存錢金額
+            case 3:
                 console.log("存錢中");
-                // 輸入存錢金額
-                let saveMoney = parseInt(prompt('存多少錢 ?', "0"));
-                console.log("領錢金額 => " + saveMoney);
-                if (saveMoney >= 0) {
-                    console.log("存錢成功!");
-                    save = save + saveMoney;
-                    // 不可以領 餘額不足
-                } else {
-                    console.log("金額錯誤");
-                }
-                console.log("最終存款 =>" + save);
                 break;
-                default:
-                    break;
-                }
-                alert("最終存款 =>" + save);
+            default:
+                break;
+        }
+        alert("最終存款 =>" + save);
     </script>
 </body>
 
