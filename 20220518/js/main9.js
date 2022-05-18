@@ -40,7 +40,6 @@ myForm.addEventListener('submit', function(e){
         case "/":
             resultNum = num1 / num2 ;
             break;
-    
         default:
             break;
     }
