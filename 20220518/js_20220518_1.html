@@ -44,7 +44,7 @@
                 console.log("領錢金額 => " + withdraw);
                 // 判斷是否足夠領取
                 // 可以領 領多少 存款剩多少
-                if (save > withdraw) {
+                if (save >= withdraw) {
                     console.log("領錢成功!");
                     save = save - withdraw;
                     // 不可以領 餘額不足
@@ -65,7 +65,7 @@
                 let transferMoney = parseInt(prompt('轉多少錢 ?', "0"));
                 console.log("轉帳金額 => " + transferMoney);
                 // 判斷是否足夠
-                if (save > transferMoney) {
+                if (save >= transferMoney) {
                     console.log("轉帳成功!");
                     save = save - transferMoney;
                     // 不可以轉 餘額不足
