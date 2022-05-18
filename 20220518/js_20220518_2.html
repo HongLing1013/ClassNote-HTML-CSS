@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript練習-最終顯示在alert上</title>
+</head>
+
+<body>
+    <script>
+        //<!-- 練習六  -->
+        // 1. 存錢多少
+        // 2. 後續的動作 - 1.領錢 2.轉帳
+
+        // 領錢時
+        // 輸入領錢金額
+        // 判斷是否足夠領取
+        // 可以領 領多少 存款剩多少
+        // 不可以領 餘額不足
+
+        // 轉帳時
+        // 輸入領錢金額
+        // 判斷是否足夠領取
+        // 可以領 領多少 存款剩多少
+        // 不可以領 餘額不足
+        // 轉帳的帳號
+
+        //<!-- 練習六  -->
+        // 1. 存錢多少
+        let save = parseInt(prompt('目前存款金額 ?', "0")); //Int=取整數
+        console.log("存款 => " + save);
+        // 2. 後續的動作 - 1.領錢 2.轉帳
+        let action = parseInt(prompt('後續動作 1.領錢 2.轉帳 ?', "0"));
+        console.log("動作 => " + action);
+
+        switch (action) {
+            // 領錢時
+            case 1:
+                console.log("領錢中");
+                // 輸入領錢金額
+                let withdraw = parseInt(prompt('領多少錢 ?', "0"));
+                console.log("領錢金額 => " + withdraw);
+                // 判斷是否足夠領取
+                // 可以領 領多少 存款剩多少
+                if (save > withdraw) {
+                    console.log("領錢成功!");
+                    save = save - withdraw;
+                    // 不可以領 餘額不足
+                } else {
+                    console.log("餘額不足!");
+                }
+                console.log("最終存款 =>" + save);
+                break;
+                // 轉帳時
+            case 2:
+                // 輸入領錢金額
+                console.log("轉帳中");
+
+                // 轉帳的帳號
+                let transferID = parseInt(prompt('轉入帳號 ?', "0"));
+                console.log("轉入帳號 => " + transferID);
+                // 可以領 領多少 存款剩多少
+                let transferMoney = parseInt(prompt('轉多少錢 ?', "0"));
+                console.log("轉帳金額 => " + transferMoney);
+                // 判斷是否足夠
+                if (save > transferMoney) {
+                    console.log("轉帳成功!");
+                    save = save - transferMoney;
+                    // 不可以轉 餘額不足
+                } else {
+                    console.log("餘額不足!");
+                }
+                alert("最終存款 =>" + save);
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+
+</html>
