@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>讓button按下去會變色</title>
+    <title>讓button按下去會文字會變色</title>
 
 </head>
 <body>
@@ -19,13 +19,26 @@
     <div class="queryClass">
         query id test
     </div>
+    <br>
+    <br>
 
     <button id="myBtn">Button</button>
+    <br>
+    <br>
+    <div id="result">
+        12345
+    </div>
 
     <script>
         const myBtn = document.getElementById('myBtn');
+        const result = document.getElementById('result');
+        // 元件 . 觸發事件 ('click典籍事件',動作要做什麼)
         myBtn.addEventListener('click',function(){
-            alert('myBtn ok');
+            // alert('myBtn ok');
+            for (const key in queryAllClass) {
+                queryAllClass[key].style.color = "red";
+            }
+            result.innerText = "div 切換成功666";
         });
 
 
