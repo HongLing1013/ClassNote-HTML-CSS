@@ -4,41 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三種變色指令</title>
-    <!-- script的標籤跟CSS一起放在head或單獨放在body都可以 -->
+    <title>使用迴圈替換顏色</title>
 
-    <style>
-        /* 第一種變色指令 */
-        .myClass{
-            color: red;
-        }
-        /* 第二種變色指令 */
-        .blueClass{
-            color: blue;
-        }
-
-        .queryClass {
-            color: yellow;
-        }
-    </style>
 </head>
 <body>
     <div id="test">
 
     </div>
 
-    <!-- 透過JS讓class做change -->
-    <div class="myClass">
-        hello myClass1
-    </div>
-    <div class="myClass">
-        hello myClass2
-    </div>
-
-    <div id="query">
-        query id test
-    </div>
-
     <div class="queryClass">
         query id test
     </div>
@@ -46,25 +19,17 @@
     <div class="queryClass">
         query id test
     </div>
+
+    <button id="myBtn">Button</button>
 
     <script>
-
-        // getElementById 抓單個ID
-        // getElementByClassName 全部的class
-        // querySelector 抓單個ID 要加#
-
-        // 抓值
-        const myClass = document.getElementsByClassName('myClass');
-        console.log(myClass[0].innerText);
-        // const myClass = document.getElementsByClassName('myClass');的縮寫
-        myClass[1].style.color = "blue";
-
-        // 第三種變色指令
-        const query = document.querySelector("#query");
-        query.style.color= "green";
-        
         // 多個query變色
         const queryAllClass = document.querySelectorAll('.queryClass');
+
+        // 1. for迴圈
+        for (let i = 0; i < queryAllClass.length; i++) {
+            queryAllClass[i].style.color = "pink";
+        }
 
     </script>
 </body>
