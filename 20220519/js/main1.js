@@ -1,6 +1,4 @@
-/*  練習三
-    + - * / 的運算
-    顯示+ - * / 的運算結果  */
+/*  option input text 改成 select   */
 
 // 1. 抓元件
 const myForm = document . getElementById("myForm");
