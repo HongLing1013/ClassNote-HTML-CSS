@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>使用for迴圈替換顏色</title>
+    <title>使用迴圈替換顏色</title>
 
 </head>
 <body>
@@ -28,8 +28,14 @@
         // 全部class更換
 
         // 1. for迴圈
-        for (let i = 0; i < queryAllClass.length; i++) {
-            queryAllClass[i].style.color = "pink";
+        // for (let i = 0; i < queryAllClass.length; i++) {
+        //     queryAllClass[i].style.color = "pink";
+        // }
+
+        // 2. for in
+        for (const key in queryAllClass) {
+            queryAllClass[key].style.color = "blue";
+
         }
 
     </script>
