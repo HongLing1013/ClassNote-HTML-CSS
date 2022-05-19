@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讓button按下去會變色</title>
+
+</head>
+<body>
+    <div id="test">
+
+    </div>
+
+    <div class="queryClass">
+        query id test
+    </div>
+
+    <div class="queryClass">
+        query id test
+    </div>
+
+    <button id="myBtn">Button</button>
+
+    <script>
+        const myBtn = document.getElementById('myBtn');
+        myBtn.addEventListener('click',function(){
+            alert('myBtn ok');
+        });
+
+
+        // 多個query變色
+        const queryAllClass = document.querySelectorAll('.queryClass');
+        // 全部class更換
+
+        // 1. for迴圈
+        // for (let i = 0; i < queryAllClass.length; i++) {
+        //     queryAllClass[i].style.color = "pink";
+        // }
+
+        // 2. for in (類似PHP的foreach)
+        for (const key in queryAllClass) {
+            queryAllClass[key].style.color = "blue";
+        }
+
+    </script>
+</body>
+</html>
