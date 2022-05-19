@@ -4,66 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS宣告變數的方法一</title>
-    <!-- script的標籤跟CSS一起放在head或單獨放在body都可以 -->
+    <title>透過JS讓class做change</title>
 
     <style>
-        h1 {
-            color: red;
-        }
 
         .myClass{
-            color: ;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <div id="test">
-
-    </div>
 
     <!-- 透過JS讓class做change -->
-    <div class="myClass1">
+    <div class="myClass">
         hello myClass1
     </div>
-    <div class="myClass2">
+    <div class="myClass">
         hello myClass2
     </div>
 
     <script>
         // 抓值
-        const testDiv = document.getElementById('test');
-        const myClass = document.getElementById(myClass);
-        // 改文字
-        testDiv.innerText= "add test txt";
-        // 改HTML
-        testDiv.innerHTML= "<h1>Hello Javascript</h1>";
-
-        // 宣告方式一 連續宣告使用逗點
-        let student1 = "aaa",
-            student2 = "bbb",
-            student3 = "ccc";
-
-        // 宣告方式二 分號
-        let student7 = "eee";
-        let student8 = "fff";
-        let student9 = "ggg";
-
-
-
-
-
-
-        // 宣告變數
-        let x = 10 ;
-
-        // 宣告常數 (常數=不可以被改變的)
-        const y = 20 ;
-
-        x = 300 ;
-
-        // 宣告變數 var
-        var z =100 ;
+        const myClass = document.getElementById('myClass');
 
     </script>
 </body>
