@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抓出input num1 num2後 兩者相加 result顯示結果</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <input type="text" name="num1" id="num1" placeholder="num1 ?" required>
+    <span> + </span>
+    <input type="text" name="num2" id="num2" placeholder="num2 ?" required>
+
+    <br>
+    <br>
+
+    <button type="button" class="btn btn-primary" id="myBtn">bs btn</button>
+    <br>
+    <br>
+    <div id="result">
+        12345
+    </div>
+
+    <script>
+        const myBtn = document.getElementById('myBtn');
+        const result = document.getElementById('result');
+
+        const num1Input = document.getElementById('num1');
+        const num2Input = document.getElementById('num2');
+
+        // 多個query變色
+        const queryAllClass = document.querySelectorAll('.queryClass');
+        // 全部class更換
+
+        // 元件 . 觸發事件 ('click典籍事件',動作要做什麼)
+        myBtn.addEventListener('click', function () {
+            // alert('myBtn ok');
+            // for (const key in queryAllClass) {
+            //     queryAllClass[key].style.color = "red";
+            // }
+            let num1 = parseInt(num1Input.value);
+            let num2 = parseInt(num2Input.value);
+            console.log(num1 + num2);
+            sum = num1 + num2;
+            result.innerText = `結果為 ${sum}`;
+        });
+
+
+
+        // 1. for迴圈
+        // for (let i = 0; i < queryAllClass.length; i++) {
+        //     queryAllClass[i].style.color = "pink";
+        // }
+
+        // 2. for in (類似PHP的foreach)
+        for (const key in queryAllClass) {
+            queryAllClass[key].style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>
