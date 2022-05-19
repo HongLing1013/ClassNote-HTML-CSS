@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>onclick的兩種方式</title>
+    <title>用font-size置換</title>
 </head>
+
 <body>
 
-    <button type="button" onclick="myFun()">function button</button>
-
+    <button type="button" onclick="fontSize()">fontSize button</button>
+    <br><br>
+    <!-- <button type="button" onclick="myFun()">function button</button>
+    <br><br>
     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript"'>
         myButton
     </button>
-    <br><br><br>
-    <div id="demo">
-
-    </div>
+    <br><br> -->
+    <p id="demo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatibus magnam sunt laudantium,
+        molestias obcaecati possimus incidunt temporibus excepturi ipsa ab accusamus vel? Optio quam consectetur in unde
+        nemo vel! Distinctio nemo aut expedita fuga reprehenderit deserunt sunt reiciendis aspernatur aliquid odit
+        magnam voluptates, officia minima natus corrupti, placeat facere!
+    </p>
     <script>
-        // 盡量使永function 比較好維護
-        function myFun(){
-            alert('myFunction ok')
+        function fontSize() { ;
+            // fontSizeDiv.style.fontSize = "30px";
+            document.getElementById('demo').style.fontSize='35px';
         }
-        // js type
-        // typeof
-
+        // const fontSizeDiv = document.getElementById('demo');
     </script>
 </body>
+
 </html>
