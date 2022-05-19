@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用font-size置換</title>
+    <title>Block Scope講解</title>
 </head>
 
 <body>
 
-    <button type="button" onclick="fontSize()">fontSize button</button>
-    <br><br>
-    <p id="demo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatibus magnam sunt laudantium,
-        molestias obcaecati possimus incidunt temporibus excepturi ipsa ab accusamus vel? Optio quam consectetur in unde
-        nemo vel! Distinctio nemo aut expedita fuga reprehenderit deserunt sunt reiciendis aspernatur aliquid odit
-        magnam voluptates, officia minima natus corrupti, placeat facere!
-    </p>
     <script>
-        function fontSize() { ;
-            document.getElementById('demo').style.fontSize='35px';
+        // let vs var
+        // 1.
+        // let new es6 2015
+        // var old
+
+        // 2.Block Scope
+        console.log(x);
+        
+        {
+            var x = "test";
+            console.log(x);
         }
+        console.log(x);
+
+        // 不要使用全域變數 global variable
+        
     </script>
 </body>
 
