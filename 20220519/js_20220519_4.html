@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class myClass color red -> blue</title>
+    <title>三種變色指令</title>
     <!-- script的標籤跟CSS一起放在head或單獨放在body都可以 -->
 
     <style>
@@ -15,6 +15,10 @@
         /* 第二種變色指令 */
         .blueClass{
             color: blue;
+        }
+
+        .queryClass {
+            color: yellow;
         }
     </style>
 </head>
@@ -35,10 +39,19 @@
         query id test
     </div>
 
+    <div class="queryClass">
+        query id test
+    </div>
+
+    <div class="queryClass">
+        query id test
+    </div>
+
     <script>
 
         // getElementById 抓單個ID
         // getElementByClassName 全部的class
+        // querySelector 抓單個ID 要加#
 
         // 抓值
         const myClass = document.getElementsByClassName('myClass');
@@ -49,6 +62,10 @@
         // 第三種變色指令
         const query = document.querySelector("#query");
         query.style.color= "green";
+        
+        // 多個query變色
+        const queryAllClass = document.querySelectorAll('.queryClass');
+
     </script>
 </body>
 </html>
