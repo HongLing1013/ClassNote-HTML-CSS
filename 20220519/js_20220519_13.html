@@ -10,6 +10,12 @@
 
 <body>
 
+    <p id="result">
+        12341534
+    </p>
+
+    <button type="button" id="myBtn">obj btn</button>
+
     <script>
         // object => php Associative Arrays ['key'] key string
         // array  => php index Arrays ['key'] index int 0 1 2
@@ -26,6 +32,13 @@
         };
 
         console.log('student1' ,student1);
+
+        const result = document.getElementById('result');
+        const myBtn = document.getElementById('myBtn');
+        myBtn.addEventListener('click',function(){
+            result.innerText = `Hello ${student1.name} age: ${student1.age} from ${student1.location}`;
+        });
+
     </script>
 </body>
 
