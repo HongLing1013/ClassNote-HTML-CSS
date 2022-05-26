@@ -34,14 +34,16 @@
 
     <!-- 倒數日期 取件日7天 -->
     <script>
-        function addDays(numDate){
-            console.log('addDays Function');
-            console.log(date.getDate());
-            let thisDate = date.getDate();//25
-            date.setDate(28);
+        function addDays(days){
+            var result = new Date(date);
+            result.setDate(result.getDate() + days);
+            return result;
         }
 
-        addDays(3);
+        newDate = addDays(3);
+        console.log(newDate);
         </script>
+
+
 </body>
 </html>
