@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- date -->
+    <!-- 取得當前時間 -->
+    <script>
+        let date = new Date();//取得時間
+        // console.log(date);
+        // console.log(typeof(date));//告訴你這是一個物件
+    </script>
+
+    <!-- 建立時間 -->
+    <script>
+        // const createDate = new Date(2022,06,01,10,11,12);
+        // console.log(createDate);
+    </script>
+
+    <!-- date.getFullYear(); -->
+    <!-- date.getFullYear()+1; 0-11 -->
+    <script>
+        // console.log(date.getFullYear());
+    </script>
+
+    <!-- date.getFullDate(); -->
+    <!-- date.getHour(); -->
+    <!-- date.getMinutes(); -->
+    <!-- date.getSeconds(); -->
+
+    <!-- 倒數日期 取件日7天 -->
+    <script>
+        function addDays(numDate){
+            console.log('addDays Function');
+            console.log(date.getDate());
+            let thisDate = date.getDate();//25
+            date.setDate(28);
+        }
+
+        addDays(3);
+        </script>
+</body>
+</html>
