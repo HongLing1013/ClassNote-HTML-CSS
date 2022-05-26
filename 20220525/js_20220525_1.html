@@ -99,31 +99,60 @@
         // console.log('你好\nhello kai');
     </script>
 
-    <!-- 練習 1 3 5 color red -->
+    <!-- 練習 1 3 5變紅色 -->
     <Script>
-        let myStr = "";
-        for (let i = 1; i <= 5; i++) {
-            myStr = `${i} => 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5 \n`;
-            // console.log(myStr);
+        // let myStr = "";
+        // for (let i = 1; i <= 5; i++) {
+        //     // 字串組成方法一
+        //     myStr = i + " => 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5 \n";
+        //     // 字串組成方法二 : 
+        //     myStr = `${i} => 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5 \n`;
 
-            // 如果1 3 5紅色
-            // 其他黑色
+        //     // console.log(myStr);
 
-            if(i % 2 == 1){
-                document.write("<p class='red'>")
-                document.write(myStr+"<br><br>");
-                document.write("</p>")
-                }else{
-                document.write("<p class='black'>")
-                document.write(myStr+"<br><br>");
-                document.write("</p>")
-            }
-        };
+        //     // 設置1 3 5紅色 其他黑色
+        //     if(i % 2 == 1){
+        //         document.write("<p class='red'>")
+        //         document.write(myStr+"<br><br>");
+        //         document.write("</p>")
+        //         }else{
+        //         document.write("<p class='black'>")
+        //         document.write(myStr+"<br><br>");
+        //         document.write("</p>")
+        //     }
+        // };
     </Script>
 
-    <!-- 99乘法表 -->
-    <Script>
-        myStr
-    </Script>
+    <!-- null undefined NaN empty的介紹 -->
+    <!-- null 可以指定一個變數為null 沒有東西 -->
+    <script>
+    // let x = null;
+    // console.log('x',x);
+    </script>
+
+    <!-- undefined 這個變數存在 但是未定義 -->
+    <script>
+    // let x;
+    // console.log(x);
+    </script>
+
+    <!-- NaN 常見工作中 忘了轉型時出現 -->
+    <script>
+        // let x = 1;
+        // let y = "abc";
+        // console.log(x*y);
+    </script>
+
+    <!-- empty 初始值/判斷是否為空值 -->
+    <script>
+        let emptyX = "";
+        let emptyY = 0;
+
+        if(emptyX.length > 0){
+            console.log(emptyX);
+        }
+
+    </script>
+
 </body>
 </html>
