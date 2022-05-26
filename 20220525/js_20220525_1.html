@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>複習JS基礎課程</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .black{
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <!-- let const var -->
@@ -14,16 +22,108 @@
 
     <!-- alert console -->
 
-    <!-- BIM => window object(obj) -->
+    <!-- BOM指令 => window object(obj) -->
+    <!-- 全域的情況使用 全部的人都可以使用 -->
+
+    <!-- 彈出視窗 -->
     <script>
         // alert('123');
         // window.alert('456');
     </script>
 
+    <!-- 彈跳窗詢問yes or no -->
     <script>
-        confirm ('Delete?');
-        confirm ('submit?');
+        // confirm ('Delete?');
+        // confirm ('submit?');
     </script>
 
+    <!-- 可以輸入數字 -->
+    <script>
+        // prompt('input num1',0);
+        // window.prompt('input num1');
+    </script>
+
+    <!-- 查看資料type -->
+    <script>
+        // typeof(123)
+        // number
+    </script>
+
+    <!-- string -->
+    <!-- 1. 字串相加 -->
+    <!-- php用.連接 -->
+    <!-- js用+連接 -->
+    <script>
+        // str1 = "hello";
+        // str2 = "php";
+        // console.log(str1+str2);
+    </script>
+
+    <!-- 2. 字串內含變數 -->
+    <!-- php "hello $name" -->
+    <script>
+        // name = "kai";
+        // combineStr = `Hello ${kai}`;
+        // console.log(combineStr);
+    </script>
+
+    <!-- number 數字 -->
+    <script>
+        // let num1 = 123;//number
+        // let num2 = "456";//string
+        // // parseInt parsFloat Number
+        // combineNum = num1 + num2;
+        // // console.log(combineNum)//字串相加
+        // combineNum= num1 + parseInt(num2);
+        // console.log(combineNum)
+
+        // let newNum1 = num1.toString();
+        // console.log(newNum1);
+        // console.log(typeof(newNum1));
+    </script>
+
+    <!-- boolean 布林值 -->
+    <!-- True false -->
+    <script>
+        // let trueBoolean = true;
+        // console.log(trueBoolean);
+        // let falseBoolean = false;
+        // console.log(falseBoolean);
+    </script>
+    <!-- flag -->
+    <!-- flagboolean / flag number / flag string -->
+
+    <!-- string 字串 -->
+    <!-- 跳脫字元 -->
+    <script>
+        // console.log('你好\nhello kai');
+    </script>
+
+    <!-- 練習 1 3 5 color red -->
+    <Script>
+        let myStr = "";
+        for (let i = 1; i <= 5; i++) {
+            myStr = `${i} => 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5 \n`;
+            // console.log(myStr);
+
+            // 如果1 3 5紅色
+            // 其他黑色
+
+            if(i % 2 == 1){
+                document.write("<p class='red'>")
+                document.write(myStr+"<br><br>");
+                document.write("</p>")
+                }else{
+                document.write("<p class='black'>")
+                document.write(myStr+"<br><br>");
+                document.write("</p>")
+            }
+        };
+    </Script>
+
+    <!-- 99乘法表 -->
+    <Script>
+        myStr
+    </Script>
 </body>
 </html>
