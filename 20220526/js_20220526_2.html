@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流程控制</title>
+</head>
+<body>
+    <!-- condition 條件控制 -->
+    <!-- 條件內放boolean(true / false) -->
+    <!-- if...else (如果...就可以....否則.....) -->
+    <script>
+        // let myLottery = false;// 中獎了
+
+        // if(myLottery){
+        //     console.log("中獎了,明天環遊世界 幫助更多人");
+        // }else{
+        //     console.log("繼續工作");
+        // }
+    </script>
+
+    <!-- 練習一 -->
+    <!-- 1.樂透中獎了 -->
+    <!-- 200塊 繼續工作 > 1000萬 -->
+    <!-- 方法一 -->
+    <script>
+        // let myLottery = true;// 中獎了
+        // let money = 2000;
+
+        // if(myLottery){
+        //     if(money > 1000){
+        //         // 條件 查看實際內容是否是我們要的結果
+        //         console.log('myLottery',myLottery);
+        //         console.log('money',money);
+
+        //         console.log("中獎了,明天環遊世界 幫助更多人")
+        // }else{
+        //     console.log("繼續工作");
+        //     }
+        // }
+    </script>
+    <!-- 方法二 -->
+    <script>
+        let myLottery = true;// 中獎了
+        let money = 2000;
+
+        if(myLottery && money > 1000){
+            console.log(('myLottery',myLottery));
+            console.log('money',money);
+        }else{
+            console.log("繼續工作");
+            }
+    </script>
+
+
+</body>
+</html>
