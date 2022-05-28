@@ -62,17 +62,153 @@
     <!-- luna = null -->
     <!-- 下市了 = undefined -->
     <script>
-        let myLottery = true;
-        let money = 2000;
-        let type = 'Luna';
+        // let myLottery = true;
+        // let money = 2000;
+        // let type = 'Luna';
 
-        if(myLottery && money > 1000 && type != 'Luna'){
-            console.log(('myLottery',myLottery));
-            console.log('money',money);
-            console.log('type',type);
-        }else{// Luna幣 GG
-            console.log("繼續工作");
+        // if(myLottery && money > 1000 && type != 'Luna'){
+        //     console.log(('myLottery',myLottery));
+        //     console.log('money',money);
+        //     console.log('type',type);
+        // }else{// Luna幣 GG
+        //     console.log("繼續工作");
+        // }
+    </script>
+
+    <!-- 練習二 進階 -->
+    <!-- 增加第三選擇 -->
+    <!-- luna幣 -->
+    <!-- 1. 中獎了 -->
+    <!-- 2. money > 110000 -->
+    <!-- 3. luna -->
+    <!-- 結果 或許有一天 luna 10000美金 重返榮耀 -->
+    <script>
+        // let myLottery = true;
+        // let money = 20000;
+        // let type = 'Luna';
+
+        // if(myLottery && money > 1000 && type != 'Luna'){
+        //     console.log(('myLottery',myLottery));
+        //     console.log('money',money);
+        //     console.log('type',type);
+        //     }else if(myLottery && money > 10000 && type == 'Luna'){
+        //         console.log(('myLottery',myLottery));
+        //     console.log('money',money);
+        //     console.log('type',type);
+        //     console.log('結果 或許有一天 luna 10000美金 重返榮耀');
+        //     }else{
+        //     console.log("繼續工作");
+        // }
+    </script>
+
+    <!-- if else 小小練習 -->
+    <!-- 泰山咖啡店 -->
+    <!-- 身分證字號 有 3 4 5 -->
+    <!-- 會員身分 -->
+    <!-- 1. 345 => 1折 -->
+    <!-- 2. 678 => 5折 -->
+    <!-- 3. 90 => 7折 -->
+    <!-- 沒有會員 4.95折 -->
+
+    <!-- let 身份證字號的變數 string -->
+    <!-- let 會員身分 boolen -->
+
+    <!-- 1. get 身分證字號 -->
+    <!-- 有345 / 678 / 90 ? -->
+    <!-- 2. 是否有會員 -->
+    <script>
+        let id = "F123456789";
+        let member = true;
+        let idStr = "";
+        let idResult = "";
+        let conditionNum = "";
+        // let idStr = id.search("F");
+
+        // 345
+        conditionNum = "3";
+        idStr = id.search("conditionNumz");
+
+        if(idStr > 0){
+            idResult = "A";
         }
+        
+        if(idResult.length==0){
+            conditionNum = "4";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "A";
+            }
+        }
+        
+        if(idResult.length==0){
+            conditionNum = "5";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "A";
+            }
+        }
+
+        if(idResult.length==0){
+            conditionNum = "6";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "A";
+            }
+        }
+        // search position 位置
+        // 存在 0 1 2 3
+        // 不存在 -1
+        
+        
+        // 678
+        if(idResult.length==0){
+            conditionNum = "6";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "B";
+            }
+        }
+        
+        if(idResult.length==0){
+            conditionNum = "7";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "B";
+            }
+        }
+
+        if(idResult.length==0){
+            conditionNum = "8";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "B";
+            }
+        }
+        
+        // 90
+        if(idResult.length==0){
+            conditionNum = "9";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "C";
+            }
+        }
+
+        if(idResult.length==0){
+            conditionNum = "0";
+            idStr = id.search("conditionNumz");
+            if(idStr > 0){
+                idResult = "C";
+            }
+        }
+
+        // 結果
+        console.log('id',id);
+        console.log('member',member);
+        console.log('idResult',idResult);
+        console.log('idStr',idStr);
+        console.log('conditionNum',conditionNum);
+
     </script>
 </body>
 </html>
