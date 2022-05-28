@@ -118,7 +118,7 @@
     <!-- 2. 是否有會員 -->
     <script>
         let id = "F123456789";
-        let member = true;
+        let isMember = true;
         let idStr = "";
         let idResult = "";
         let conditionNum = "";
@@ -204,10 +204,25 @@
 
         // 結果
         console.log('id',id);
-        console.log('member',member);
+        console.log('isMember',isMember);
         console.log('idResult',idResult);
         console.log('idStr',idStr);
         console.log('conditionNum',conditionNum);
+
+        // isResult & isMember?
+        // A && member => 1折
+        // B && member => 5折
+        // C && member => 7折
+        // 其他 => 95折
+        if(idResult == "A" && isMember){
+            console.log('恭喜 得到 1折');
+        }else if(idResult == "B" && isMember){
+            console.log('恭喜 得到 5折');
+        }else if(idResult == "C" && isMember){
+            console.log('恭喜 得到 7折');
+        }else{
+            console.log('快加入會員 本日 95折');
+        }
 
     </script>
 </body>
