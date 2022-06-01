@@ -32,21 +32,21 @@
     <!-- 練習一 C 7折 -->
     <!-- 並讓C一次得到兩個條件 -->
     <script>
-        let idReslut = "C";
+        // let idReslut = "C";
 
-        switch (idReslut) {
-            case "A":
-                console.log("恭喜你得到 一折");
-                break;
-            case "B":
-                console.log("恭喜你得到 五折");
-                break;
-            case "C":
-                console.log("恭喜你得到 七折");
-            default:
-                console.log("恭喜你得到 九五折");
-                break;
-        }
+        // switch (idReslut) {
+        //     case "A":
+        //         console.log("恭喜你得到 一折");
+        //         break;
+        //     case "B":
+        //         console.log("恭喜你得到 五折");
+        //         break;
+        //     case "C":
+        //         console.log("恭喜你得到 七折");
+        //     default:
+        //         console.log("恭喜你得到 九五折");
+        //         break;
+        // }
     </script>
 
     <!-- case number 1-7 -->
@@ -55,58 +55,58 @@
     <!-- 1 => 可以考慮 星期一 去買樂透 -->
     <!-- 2 => 可以考慮 星期二 去買樂透 -->
     <script>
-        let loveNum = 2;
+        // let loveNum = 2;
 
-        switch (loveNum) {
-            case 1:
-                console.log("星期一");
-                break;
-            case 2:
-                console.log("星期二");
-                break;
-            case 3:
-                console.log("星期三");
-                break;
-            case 4:
-                console.log("星期四");
-                break;
-            case 5:
-                console.log("星期五");
-                break;
-            case 6:
-                console.log("星期六");
-                break;
-            case 7:
-                console.log("星期日");
-                break;
-            default:
-                break;
-        }
+        // switch (loveNum) {
+        //     case 1:
+        //         console.log("星期一");
+        //         break;
+        //     case 2:
+        //         console.log("星期二");
+        //         break;
+        //     case 3:
+        //         console.log("星期三");
+        //         break;
+        //     case 4:
+        //         console.log("星期四");
+        //         break;
+        //     case 5:
+        //         console.log("星期五");
+        //         break;
+        //     case 6:
+        //         console.log("星期六");
+        //         break;
+        //     case 7:
+        //         console.log("星期日");
+        //         break;
+        //     default:
+        //         break;
+        // }
     </script>
 
     <!-- 練習二變席題目 -->
     <!-- 奇數日去買 -->
     <!-- 偶數日去買 -->
     <script>
-        let loveNumber = 2;
+        // let loveNumber = 2;
 
-        switch (loveNumber) {
-            // 奇數
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-                console.log("奇數日");
-                break;
-            // 偶數
-            case 2:
-            case 4:
-            case 6:
-                console.log("偶數日");
-                break;
-            default:
-                break;
-        }
+        // switch (loveNumber) {
+        //     // 奇數
+        //     case 1:
+        //     case 3:
+        //     case 5:
+        //     case 7:
+        //         console.log("奇數日");
+        //         break;
+        //     // 偶數
+        //     case 2:
+        //     case 4:
+        //     case 6:
+        //         console.log("偶數日");
+        //         break;
+        //     default:
+        //         break;
+        // }
     </script>
 
     <!-- 作業 -->
@@ -115,7 +115,29 @@
     <!-- 早上圖書館讀書1 4 7 -->
     <!-- 下午圖書館讀書2 5 8 -->
     <!-- 晚上圖書館讀書3 6 9 -->
-
+    <script>
+        let loveNum = 2;
+        console.log('loveNum => ' + loveNum);
+        switch (loveNum % 3) {
+            // 早上
+            case 1:
+                // 餘數1
+                console.log("1 4 7 圖書館A時段");
+                break;
+            // 下午
+            case 2:
+                // 餘數2
+                console.log("2 5 8 圖書館B時段");
+                break;
+            // 晚上
+            case 3:
+                // 餘數0
+                console.log("3 6 9 圖書館C時段");
+                break;
+                default:
+                    break;
+        }
+    </script>
 </body>
 
 </html>
