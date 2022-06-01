@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+
+<body>
+    <!-- for loop -->
+    <!-- 重複很多次 -->
+
+    <!-- 練習一 1 + 2 + 3 + .... + 10 -->
+    <!-- local scope -->
+    <!-- global scope -->
+
+    <!-- 1 + 2 = 3 -->
+    <!-- (1 + 2) + 3 ... -->
+    <!-- (1 + 2 + 3 ...9) + 10 = 55 -->
+
+    <!-- 從1開始 10結束 一次+1 -->
+
+    <!-- 方法一 -->
+    <script>
+        // let sum1 = 0;
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log('old sum1 =>' + sum1); //0
+        //     console.log('i => ' + i); //1
+        //     sum1 = sum1 + 1; //0 = 0 + 1
+        //     console.log('sum1 = sum1 + i ; => ' + sum1);
+        // }
+    </script>
+
+    <!-- 方法二 -->
+    <script>
+        // let sum2 = 0;
+        // for (let i = 1; i <= 10; i++) {
+        //     // console.log('i =>' +i);
+        //     // console.log('sum2 =>' + sum2);
+        //     // console.log(`${sum2} + ${i}`);
+        //     sum2 = sum2 + i;
+        //     // console.log(`resule sum2 => ${sum2}`);
+        // }
+        // console.log(`resule sum2 => ${sum2}`);
+    </script>
+
+    <!-- 練習二 -->
+    <!-- 2-1 * 在10行 -->
+    <script>
+        // for (let i = 0; i < 10; i++) {
+        //     // console.log(i);
+        //     console.log('*');
+        // }
+    </script>
+    <!-- 2-2 印出10個 * 在同一行 -->
+    <script>
+        // sum3 = '';
+        // for (let i = 0; i < 10; i++) {
+        //     sum3 = sum3 + '*';
+        // }
+        // console.log(sum3);
+    </script>
+
+    <!-- 畫星星 練習一 -->
+    <!-- 輸入一個數 如下圖 -->
+    <!-- input = 5 -->
+    <script>
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        sum4 = '';
+        input = 7;
+        for (let i = 0 ; i < input ; i++){
+            // sum4 = sum4 + '*';
+            sum4 += '*';
+            // console.log(`${i+1} => ${sum4}`);
+            document.write(`${i+1} => ${sum4}<br>`);
+        }
+    </script>
+</body>
+
+</html>
