@@ -202,6 +202,8 @@
             //   *****
             //    ***
             //     *
+            
+            // 上半部
             // 1. 蓋大樓
             let input = 5;
             for(let i = 1 ; i <= input ; i++){
@@ -223,6 +225,24 @@
                 }
 
                 document.write('<br>');
+            }
+            // 下半部
+            // 1. 蓋大樓 只要5.4.3.2
+            for(i = input; i >1 ; i--){
+              document.write(i);
+
+            //   空格
+            for(j = 0; j <= (input - i); j++){
+                // document.write(j);
+                document.write('&nbsp;&nbsp;');
+            }
+
+            // 畫星星
+            for(k = (((i - 1) * 2) - 1) ; k > 0 ; k--){
+                // document.write(k);
+                document.write('*');
+            }
+              document.write('<br>');
             }
         </script>
 </body>
