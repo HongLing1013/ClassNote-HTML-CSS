@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 作業 -->
+    <!-- 發號碼牌動作 共90個 -->
+    <!-- 取餘數 -->
+    <!-- 早上圖書館讀書1 4 7 -->
+    <!-- 下午圖書館讀書2 5 8 -->
+    <!-- 晚上圖書館讀書3 6 9 -->
+    <script>
+        let loveNum = 2;
+        console.log('loveNum => ' + loveNum);
+        switch (loveNum % 3) {
+            // 早上
+            case 1:
+                // 餘數1
+                console.log("1 4 7 圖書館A時段");
+                break;
+            // 下午
+            case 2:
+                // 餘數2
+                console.log("2 5 8 圖書館B時段");
+                break;
+            // 晚上
+            case 3:
+                // 餘數0
+                console.log("3 6 9 圖書館C時段");
+                break;
+                default:
+                    break;
+        }
+    </script>
+
+</body>
+</html>
