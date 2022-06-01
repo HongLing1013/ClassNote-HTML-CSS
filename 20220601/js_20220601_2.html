@@ -202,7 +202,28 @@
             //   *****
             //    ***
             //     *
-            
+            // 1. 蓋大樓
+            let input = 5;
+            for(let i = 1 ; i <= input ; i++){
+                // console.log(i);
+                document.write(i);
+                // 真實寫入星星的地方
+
+                // 空格的部分
+                for(let j = 1 ; j <= (input - i) ; j++){
+                    // console.log(j);
+                    // document.write('j');
+                    document.write('&nbsp;&nbsp;');
+                }
+
+                // 星星的部分
+                for(let k = 1; k <= (2 * i - 1); k++) {
+                    // document.write(k);
+                    document.write('*');
+                }
+
+                document.write('<br>');
+            }
         </script>
 </body>
 
