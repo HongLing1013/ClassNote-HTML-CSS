@@ -67,20 +67,63 @@
     <!-- 輸入一個數 如下圖 -->
     <!-- input = 5 -->
     <script>
-        // *
-        // **
-        // ***
-        // ****
-        // *****
-        sum4 = '';
-        input = 7;
-        for (let i = 0 ; i < input ; i++){
-            // sum4 = sum4 + '*';
-            sum4 += '*';
-            // console.log(`${i+1} => ${sum4}`);
-            document.write(`${i+1} => ${sum4}<br>`);
-        }
+        // // *
+        // // **
+        // // ***
+        // // ****
+        // // *****
+        // sum4 = '';
+        // input = 7;
+        // for (let i = 0 ; i < input ; i++){
+        //     // sum4 = sum4 + '*';
+        //     sum4 += '*';
+        //     // console.log(`${i+1} => ${sum4}`);
+        //     document.write(`${i+1} => ${sum4}<br>`);
+        // }
     </script>
+
+    <!-- 畫星星 練習二 -->
+    <!-- 輸入一個數 會顯示如下圖 -->
+    <!-- input = 5時 -->
+
+    <script>
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+
+        // 1.第一層 input 5 => 5層
+        // 步驟一
+        // input = 5;
+        // for (let i = 0; i < input; i++){
+        //     // 1.蓋大樓
+        //     document.write(i);
+        //     // 2.雙層迴圈
+        //     for(let j = 0; i >=j ; j++){
+        //         document.write(j);
+        //     }
+        //     // 2. end
+        //     document.write("<br>");
+        // }
+        // 步驟二
+        input = 5;
+        tmp = input;
+        for (let i = 0; i < input; i++){
+            // console.log('old tmp => ' + tmp);
+            tmp --; //tmp = tmp -1 ;
+            // console.log('new tmp => ' + tmp);
+            // 1.蓋大樓
+            // document.write(i);
+            // 2.雙層迴圈
+            for(let j = 0; j <= tmp ; j++){
+                // document.write(j);
+                document.write('*');
+            }
+            // 2. end
+            document.write("<br>");
+        }
+        </script>
 </body>
 
 </html>
