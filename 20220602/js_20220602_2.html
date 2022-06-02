@@ -12,22 +12,90 @@
     </style>
 </head>
 <body>
+    <!-- 自己的方法 -->
     <script>
-        document.write('<table>')
-            for(let i = 1; i <= 9 ; i++){
+        // document.write('<table>')
+        //     for(let i = 1; i <= 9 ; i++){
                 
-                document.write('<tr>')
-                // document.write(i);
-                for(let j = 1; j <= 9 ; j++){
-                    document.write('<td>')
-                    document.write(i, 'x' , j , '=');
-                    document.write(i*j);
-                    document.write('</td>')
+        //         document.write('<tr>')
+        //         // document.write(i);
+        //         for(let j = 1; j <= 9 ; j++){
+        //             document.write('<td>')
+        //             document.write(i, 'x' , j , '=');
+        //             document.write(i*j);
+        //             document.write('</td>')
+        //         }
+        //         document.write('<br>');
+        //         document.write('</tr>')
+        // }
+        // document.write('</table>')
+        </script>
+
+        <!-- 老師的方法 -->
+        <script>
+            console.log('for 99');
+            // 練習99乘法表 console顯示
+            // 練習一 conosole.log 練習 99乘法表
+            // 1*1=1 ..... 1*9=9
+            // 2*1=1 ..... 2*9=18
+            // 9*9=9 ..... 9*9=81
+    
+            // 練習二 補0   google js 補0 //padStart
+            // 01*01=01 ..... 01*09=09
+            // 09*09=09 ..... 09*09=81
+    
+            // 1.蓋大樓
+            // 2.畫星星
+            let test = 5 ;
+            // console.log(test.padStart(2,"0")); //發現fun ?? error
+            // string
+    
+            // 數字 變成 字串
+            // 1.number -> string
+            // 2.string 補0
+    
+            let testStr = test.toString();
+            console.log('testStr => ' + testStr);
+            let testStrChange = testStr.padStart(2,"0");
+            console.log('補0 testStrChange =>' + testStrChange);
+    
+            // 1.外圈
+            // 2.內層
+            for (let i = 1; i <= 9; i++) {
+                // console.log(i);
+                for (let j = 1; j <= 9; j++) {
+                    //    console.log(j); 
+                    // 1*1=1 ..... 1*9=9
+                    //    console.log(`${i} * ${j} = ${i * j}`);
+    
+                    // 補0
+                    // 1.number -> string
+                    // 2. string -> padStart
+    
+                    // 1.number -> string
+                    let iStr = i.toString();
+                    let jStr = j.toString();
+                    let ijStr = (i*j).toString();
+                    // console.log(ijStr);
+                    // console.log(typeof(ijStr));
+                    // console.log(jStr);
+                    
+                    // 2. string -> padStart
+                    let iStrChange = iStr.padStart(2,"0");
+                    let jStrChange = jStr.padStart(2,"0");
+                    let ijStrChange = ijStr.padStart(2,"0");
+    
+                    // document.write(`${i} * ${j} = ${i * j}
+                    document.write(`${iStrChange} * ${jStrChange} = ${ijStrChange}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                     `);
                 }
                 document.write('<br>');
-                document.write('</tr>')
-        }
-        document.write('</table>')
+    
+                // 練習三
+                // 2*1 .... 2*9  文字紅色 if
+            }
+    
         </script>
 </body>
 </html>
