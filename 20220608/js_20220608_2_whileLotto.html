@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array basic
+
+        // array 邏輯 本質解決變數不夠的問題
+        // 班上有25位同學
+        // 方法一
+        // let student1 = 1;
+        // let student2 = 2;
+        // let student3 = 3;
+
+        // // 方法二 array
+        // let studentArray = [1,2,3,4,5];
+
+        // // array 語法
+        // let myArr = [1,2,3,4,5];
+        // console.log('myArr',myArr);
+    </script>
+
+    <!-- while 樂透開獎 -->
+    <!-- 1-49 六個大樂透 -->
+    <!-- key不能重複 <== 防呆 -->
+    本期開獎為<br>
+    <!-- 1<br>
+    2<br>
+    3<br>
+    4<br>
+    5<br>
+    6<br> -->
+
+    <script>
+        // 1. 取出亂數 1-49
+        // Math random
+        // Math.floor(Math.random() * (max - min) ) + min;
+        // document.write(num)
+        
+        // 2. 我要跑六次
+        let i = 1;
+        let lottery = [];
+        while(lottery.length < 6){
+            let num = Math.floor(Math.random() *(6 - 1) )+ 1;
+
+            lottery.push(num);
+            document.write(`第${i}個號碼=>${num}<br>`);
+            // 3-3 array 內容是否重複
+            // if(lottery.indexOf(num) < 0 ){
+                // 3-2 array push 增加array的內容
+        //    }
+            // i++;
+        }
+
+        console.log(lottery);
+        // 3. 防呆
+        // 3-1 增加lottery array
+        // 3-2 num push 空array 增加內容
+        // 3-3 array 內容是否重複
+
+
+
+
+        </script>
+</body>
+</html>
