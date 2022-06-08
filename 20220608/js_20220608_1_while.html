@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- while練習一 成績加總-->
+    <!-- 輸入學生數量 input -->
+    <!-- student1 國文 -->
+    <!-- student1 英文 -->
+    <!-- student1 數學 -->
+    <!-- 計算總分 與 平均分數 -->
+
+    <!-- 最後畫面顯示 -->
+    <!-- 學生1 國文=>60 英文=>70 數學=>80 -->
+    <!-- 學生1 總分=>210 平均=>70 -->
+    
+    <!-- 學生2 國文=>70 英文=>80 數學=>90 -->
+    <!-- 學生2 總分=>240 平均=>80 -->
+    
+    <!-- ------------------------------------- -->
+    
+    <script>
+        // 學生數量 input
+        // let input = 1;
+        let input = prompt('請輸入學生數量');
+        // console.log('input',input);
+        
+        // student1 國文
+        // student1 英文
+        // student1 數學
+        let chinese = prompt('請輸入國文分數');
+        let english = prompt('請輸入英文分數');
+        let math = prompt('請輸入數學分數');
+        let sum = chinese + english + math;
+        let avg = sum / 3;
+
+        console.log('chinese',chinese);
+        console.log('english',english);
+        console.log('math',math);
+        console.log('sum',sum);
+        console.log('avg',avg);
+        
+        //  學生1 國文=>60 英文=>70 數學=>80
+        //  學生1 總分=>210 平均=>70
+        document.write(`國文=>${chinese} 英文=>${english} 數學=>${math}<br>`);
+        document.write(`學生1 總分=>${sum} 平均=>${avg}`);
+        
+        // 學生2 國文=>70 英文=>80 數學=>90
+        // 學生2 總分=>240 平均=>80
+
+
+        </script>
+</body>
+</html>
