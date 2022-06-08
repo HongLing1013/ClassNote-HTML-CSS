@@ -37,7 +37,7 @@
     6<br> -->
 
     <script>
-        // 1. 取出亂數 1-49
+/*         // 1. 取出亂數 1-49
         // Math random
         // Math.floor(Math.random() * (max - min) ) + min;
         // document.write(num)
@@ -53,7 +53,6 @@
             // 3-3 array 內容是否重複
             // if(lottery.indexOf(num) < 0 ){
                 // 3-2 array push 增加array的內容
-        //    }
             // i++;
         }
 
@@ -61,11 +60,61 @@
         // 3. 防呆
         // 3-1 增加lottery array
         // 3-2 num push 空array 增加內容
-        // 3-3 array 內容是否重複
-
-
-
-
+        // 3-3 array 內容是否重複 */
         </script>
+
+<script>
+
+    // while 樂透開獎
+// 1-49 六個大樂透
+// key 不能重複 <==防呆
+
+// 1.取出亂數 1-49
+// Math random
+
+// min 有包括 max 沒包括
+// Math.floor(Math.random() * (max - min) ) + min;
+
+// min and max 都有包括
+// Math.floor(Math.random() * (max - min + 1) ) + min
+
+
+// document.write(num)
+
+// 2.我要跑六次
+let i = 1; //顯示第幾次開獎
+let lottery = [];
+
+// while (lottery.length < 6) {
+    while (lottery.length < 6) {
+        // while (i <= 6) {
+            // min 1 - max 49
+            let num = Math.floor(Math.random() * (49 - 1 + 1)) + 1;
+            
+    // 判斷是否存array
+    let flag = lottery.indexOf(num);
+    
+    // -1 不存在 原本的array
+    if (flag < 0) {
+        // push
+        lottery.push(num);
+        
+        // array 長度 
+        // lottery.length 真正開真正開出的號碼
+        document.write(`第${i}次開獎---第${lottery.length}個號碼 => ${num}<br>`);
+    }
+
+    i++;
+}
+
+console.log(lottery);
+
+// 3.防呆
+// 3-1 增加lottery array
+// 3-2 num push 空array 增加內容
+// 3-3 array 內容是否重複
+
+</script>
+
 </body>
 </html>
