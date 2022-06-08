@@ -26,32 +26,40 @@
     <script>
         // 學生數量 input
         // let input = 1;
-        let input = prompt('請輸入學生數量');
+        let input = Number(prompt('請輸入學生數量'));
         // console.log('input',input);
         
-        // student1 國文
-        // student1 英文
-        // student1 數學
-        let chinese = prompt('請輸入國文分數');
-        let english = prompt('請輸入英文分數');
-        let math = prompt('請輸入數學分數');
-        let sum = chinese + english + math;
-        let avg = sum / 3;
+        let i =1;
+        while(i<= input){
+            console.log(`第${i}個人`);
+            // code start
+            
+                    // student1 國文
+                    // student1 英文
+                    // student1 數學
+                    let chinese = Number(prompt(`學生${i}請輸入國文分數`));
+                    let english = Number(prompt(`學生${i}請輸入英文分數`));
+                    let math = Number(prompt(`學生${i}請輸入數學分數`));
+                    let sum = chinese + english + math;
+                    let avg = sum / 3;
+            
+                    console.log('chinese',chinese);
+                    console.log('english',english);
+                    console.log('math',math);
+                    console.log('sum',sum);
+                    console.log('avg',avg);
+                    
+                    //  學生1 國文=>60 英文=>70 數學=>80
+                    //  學生1 總分=>210 平均=>70
+                    document.write(`國文=>${chinese} 英文=>${english} 數學=>${math}<br>`);
+                    document.write(`學生1 總分=>${sum} 平均=>${avg}<br><br>`);
+                    
+                    // 學生2 國文=>70 英文=>80 數學=>90
+                    // 學生2 總分=>240 平均=>80
 
-        console.log('chinese',chinese);
-        console.log('english',english);
-        console.log('math',math);
-        console.log('sum',sum);
-        console.log('avg',avg);
-        
-        //  學生1 國文=>60 英文=>70 數學=>80
-        //  學生1 總分=>210 平均=>70
-        document.write(`國文=>${chinese} 英文=>${english} 數學=>${math}<br>`);
-        document.write(`學生1 總分=>${sum} 平均=>${avg}`);
-        
-        // 學生2 國文=>70 英文=>80 數學=>90
-        // 學生2 總分=>240 平均=>80
-
+            // code end
+            i++;
+        }            
 
         </script>
 </body>
