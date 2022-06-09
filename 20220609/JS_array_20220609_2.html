@@ -52,6 +52,9 @@
 
     let newStudentArr =[];
 
+    // foreach 全部的陣列都跑一次
+    // push 陣列 增加一個 value
+
     studentArr.forEach(function(value,key){
         console.log('studentArr foreach');
         console.log(key);
@@ -62,12 +65,29 @@
         // }
 
         // value pass
+        // != 不等於
+        // == 等於
         if(value != "html"){
             newStudentArr.push(value);
         }
     });
 
     console.log('newStudentArr',newStudentArr);
+
+    // push vs pop
+    // push 增加一個value到array 最後
+    // pop 減少一個value到array 最後
+
+    let pushtArr = [1,3,5,7,9];
+    console.log('tpushArr',pushArr);
+    // value 55688?
+    pushArr.push(55688);
+    console.log('tpushArr',pushArr);
+    
+    // pop
+    let popArr=[1,3,5,7,9];
+    popArr.pop();
+    console.log('popArr',popArr);
 </script>
 
 </html>
