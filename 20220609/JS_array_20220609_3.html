@@ -83,17 +83,40 @@
 // console.log('mapMoneyArr',mapMoneyArr);
 
 // filter return 條件 vs map return value 運算
-let filterArr =[1,2,3,4,5,6,7,8,9,10];
-let newFilterArr = filterArr.filter(function (value){
-    // return (value % 2 == 0);
-    // return (value % 2 == 1);
-    return (value >= 4);
-})
+// let filterArr =[1,2,3,4,5,6,7,8,9,10];
+// let newFilterArr = filterArr.filter(function (value){
+//     // return (value % 2 == 0);
+//     // return (value % 2 == 1);
+//     return (value >= 4);
+// })
 
-console.log('filterArr',filterArr);
-console.log('newFilterArr',newFilterArr);
+// console.log('filterArr',filterArr);
+// console.log('newFilterArr',newFilterArr);
 
+// array 加總 [1,2,3,4,5,6,7,8,9,10];
+// foreach 111
+// reduce
 
+// foreach
+let reduceArr =[1,2,3,4,5,6,7,8,9,10];
+// let newReduceArr =[];
+// let sum = 0;
+// reduceArr.forEach(value => {
+//     sum += value;
+// });
+// console.log(sum);
+
+// w3cschools js reduce
+// tatal 加總累積
+// value 現在的直
+
+reduceArr.reduce(function(tatal,value){
+    console.log('hello reduce');
+    console.log(tatal);
+    console.log(tvalue);
+    return tatal + value;
+});
+console.log(sum);
 
 
 
